@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux Counter</title>
+    <style>
+        body {
+            background: #E7FEFF;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1100px;
+            margin: 10rem auto;
+        }
+        .container h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+        .steps-container > h3, .value-container > h3 {
+            text-align: center;
+            font-weight: 500;
+        }
+        .steps-container > button, .value-container > button {
+            padding: 0.3rem;
+            margin-left: 0.6rem;
+            background-color: #21345E;
+            font-size: 1.2rem;
+        } 
+        .btn-container > button {
+            margin-top: 0.7rem;
+            background-color: #3DBA67;
+            padding: 0.2rem 0.4rem;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>1</h1>
+    <div class="wrapper">
+    <div class="steps-container">
+    <h3>Steps</h3>
+    <button class="step-1">5</button>
+    <button class="step-2">10</button>
+    <button class="step-3">15</button>
+    </div>
+    <div class="value-container">
+    <h3>Max Value</h3>
+    <button class="value-1">15</button>
+    <button class="value-2">100</button>
+    <button class="value-3">200</button>
+    </div>
+</div>
+    <div class="btn-container">
+    <button class="increment">Increment</button>
+    <button class="decrement">Decrement</button>
+    <button class="reset">Reset</button>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
